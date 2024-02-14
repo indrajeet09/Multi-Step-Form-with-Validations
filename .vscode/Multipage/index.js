@@ -23,16 +23,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
     
+    
     next2Btn.addEventListener("click", function() {
         if (form2.checkValidity()) {
             console.log("Next button clicked on form 2");
-            form2.style.left = "-450px";
-            form3.style.display = "40px";
+            form1.style.left = "-100%"; 
+            form2.style.left = "-100%"; 
+            form3.style.left = "0";    
             updateProgress(++currentStep);
         } else {
             form2.reportValidity();
         }
     });
+    
     
     back1Btn.addEventListener("click", function() {
         console.log("Back button clicked on form 2");
